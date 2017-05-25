@@ -11,7 +11,7 @@
     <title>Index</title>
     <script src="~/Scripts/JavaScript1.js"></script>
     <script>
-        //改成匿名函式
+        //3.改成匿名函式
         window.onload = function () {
             document.getElementById("Button2").onclick = function () {
                 clickme();
@@ -20,7 +20,7 @@
                 clickme();
             });
         };
-        //程式開始時先註冊
+        //2.程式開始時先註冊
         //window.onload = ready;
     </script>
 </head>
@@ -31,7 +31,7 @@
         <input id="Button3" type="button" value="DOM Level2 Test" />
     </div>
 
-    @*要注意JS的解譯方式是從上到下
+    @*1.要注意JS的解譯方式是從上到下
     所以要先有id="Button2"，才能去註冊JS的function
     <script>
         document.getElementById("Button2").onclick = function () {
