@@ -15,8 +15,11 @@
         window.onload = function () {
             document.getElementById("Button2").onclick = function () {
                 clickme();
-            }
-        }
+            };
+            document.getElementById("Button3").addEventListener("click", function () {
+                clickme();
+            });
+        };
         //程式開始時先註冊
         //window.onload = ready;
     </script>
@@ -25,6 +28,7 @@
     <div>
         <input id="Button1" type="button" value="Click me!" onclick="clickme();" />
         <input id="Button2" type="button" value="DOM Level0 Test" />
+        <input id="Button3" type="button" value="DOM Level2 Test" />
     </div>
 
     @*要注意JS的解譯方式是從上到下
